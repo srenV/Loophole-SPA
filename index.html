@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <script type="module" src="./app.js" defer></script>
+  <title>Frontend Mentor | Loopstudios landing page</title>
+</head>
+<!-- SPA try, the header and footer are static but the main gets the right html snippets injected -->
+
+<body>
+  <header>
+    <div id="upperHeader">
+      <span>
+        <img src="./images/logo.svg" alt="Loopstudios logo" data-route="home" id="upperLogo" class="logo linkButton" />
+      </span>
+
+      <button id="menuButton">
+        <img src="./images/icon-hamburger.svg" alt="hamburger button icon">
+      </button>
+    </div>
+    <div class="hero">
+      <h1>Immersive experiences that deliver</h1>
+    </div>
+
+  </header>
+
+  <div id="menu">
+    <button id="menuCloseButton"><img src="./images/icon-close.svg" alt="menu close button"></button>
+    <nav aria-hidden="true">
+      <ul>
+        <li><button data-route="about" class="linkButton">About</button></li>
+        <li><button data-route="careers" class="linkButton">Careers</button></li>
+        <li><button data-route="events" class="linkButton">Events</button></li>
+        <li><button data-route="products" class="linkButton">Products</button></li>
+        <li><button data-route="support" class="linkButton">Support</button></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="app">
+    <!-- Page Snippets get Injected here -->
+  </main>
+  <footer>
+    <div id="lowerLogo">
+      <img src="./images/logo.svg" alt="Loopstudios logo" data-route="home" class="logo linkButton" />
+    </div>
+
+    <div id="socialMediaLinks">
+      <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
+      <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
+      <a href="#"><img src="./images/icon-pinterest.svg" alt="" /></a>
+      <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
+    </div>
+
+    <div id="footerLinks">
+      <nav>
+        <ul>
+          <li><button data-route="about" class="linkButton">About</button></li>
+          <li><button data-route="careers" class="linkButton">Careers</button></li>
+          <li><button data-route="events" class="linkButton">Events</button></li>
+          <li><button data-route="products" class="linkButton">Products</button></li>
+          <li><button data-route="support" class="linkButton">Support</button></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="rights">
+      <span>© 2021 Loopstudios. All rights reserved</span>
+    </div>
+  </footer>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+
+
+*{
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body{
+    margin: 0;
+    max-width: 450px;
+    min-width: 375px;
+    overflow-x: hidden;
+}
+
+h1{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+ul button{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    background-image: url(./images/mobile/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+}
+
+#upperHeader{
+    display: flex;
+    width: 100%;
+}
+
+#menuButton{
+    background: none;
+    border: none;
+    height: 6rem;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menuCloseButton{
+    background: none;
+    border: none;
+    height: 6rem;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu{
+    transition: all 1s ease;
+    transform: translateX(100%);
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    inset: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.logo{
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.hero{
+    color: white;
+    border: .1rem solid white;
+    width: 80%;
+    margin-top: 6rem;
+    padding: 1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 1em;
+    display: grid;
+    grid-template-areas: 
+    'logo'
+    'fl'
+    'sml'
+    'rights';
+    justify-items: center;
+    gap: 1em;
+}
+
+#lowerLogo{
+    grid-area: logo;
+}
+
+#footerLinks{
+    grid-area: fl;
+}
+
+#rights{
+    grid-area: rights;
+    color: gray;
+}
+
+#footerLinks ul {
+    text-align: center;
+    padding: 0;
+    line-height: 2;
+}
+
+#socialMediaLinks{
+    display: flex;
+    gap: 1rem;
+    place-self: center;
+    grid-area: sml;
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }

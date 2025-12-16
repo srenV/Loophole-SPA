@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles.css" />
+  <!-- Index styling (Header & Footer) -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- Snippet Styling -->
+  <link rel="stylesheet" href="./css/home.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <script type="module" src="./app.js" defer></script>
   <title>Frontend Mentor | Loopstudios landing page</title>
@@ -17,7 +20,15 @@
       <span>
         <img src="./images/logo.svg" alt="Loopstudios logo" data-route="home" id="upperLogo" class="logo linkButton" />
       </span>
-
+      <nav id="desktopNav">
+        <ul>
+          <li><button data-route="about" class="linkButton">About</button></li>
+          <li><button data-route="careers" class="linkButton">Careers</button></li>
+          <li><button data-route="events" class="linkButton">Events</button></li>
+          <li><button data-route="products" class="linkButton">Products</button></li>
+          <li><button data-route="support" class="linkButton">Support</button></li>
+        </ul>
+      </nav>
       <button id="menuButton">
         <img src="./images/icon-hamburger.svg" alt="hamburger button icon">
       </button>
@@ -25,7 +36,6 @@
     <div class="hero">
       <h1>Immersive experiences that deliver</h1>
     </div>
-
   </header>
 
   <div id="menu">

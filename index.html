@@ -18,9 +18,9 @@
   <header>
     <div id="upperHeader">
       <span>
-        <img src="./images/logo.svg" alt="Loopstudios logo" data-route="home" id="upperLogo" class="logo linkButton" />
+        <img src="./images/logo.svg" alt="Loopstudios logo" data-route="home" id="upperLogo" class="logo linkButton" aria-label="Go to home" />
       </span>
-      <nav id="desktopNav">
+      <nav id="desktopNav" aria-label="Main-navigation">
         <ul>
           <li><button data-route="about" class="linkButton">About</button></li>
           <li><button data-route="careers" class="linkButton">Careers</button></li>
@@ -29,7 +29,7 @@
           <li><button data-route="support" class="linkButton">Support</button></li>
         </ul>
       </nav>
-      <button id="menuButton">
+      <button id="menuButton" aria-expanded="false" aria-controls="menu">
         <img src="./images/icon-hamburger.svg" alt="hamburger button icon">
       </button>
     </div>
@@ -39,8 +39,8 @@
   </header>
 
   <div id="menu">
-    <img src="./images/logo.svg" alt="Loopstudios logo" data-route="home" id="menuLogo" class="logo linkButton" />
-    <button id="menuCloseButton"><img src="./images/icon-close.svg" alt="menu close button"></button>
+    <img src="./images/logo.svg" alt="Loopstudios logo" data-route="home" id="menuLogo" class="logo linkButton" aria-label="Go to home" />
+    <button id="menuCloseButton" aria-label="Close menu" aria-expanded="true"><img src="./images/icon-close.svg" alt="menu close button"></button>
     <nav aria-hidden="true">
       <ul>
         <li><button data-route="about" class="linkButton">About</button></li>
@@ -57,18 +57,18 @@
   </main>
   <footer>
     <div id="lowerLogo">
-      <img src="./images/logo.svg" alt="Loopstudios logo" data-route="home" class="logo linkButton" />
+      <img src="./images/logo.svg" alt="Loopstudios logo" data-route="home" class="logo linkButton" aria-label="Go to home" />
     </div>
 
     <div id="socialMediaLinks">
-      <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
-      <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
-      <a href="#"><img src="./images/icon-pinterest.svg" alt="" /></a>
-      <a href="#"><img src="./images/icon-instagram.svg" alt="" /></a>
+      <a href="#" aria-label="Facebook"><img src="./images/icon-facebook.svg" alt="" /></a>
+      <a href="#" aria-label="Twitter"><img src="./images/icon-twitter.svg" alt="" /></a>
+      <a href="#" aria-label="Pinterest"><img src="./images/icon-pinterest.svg" alt="" /></a>
+      <a href="#" aria-label="Instagram"><img src="./images/icon-instagram.svg" alt="" /></a>
     </div>
 
     <div id="footerLinks">
-      <nav>
+      <nav aria-label="Footer-Links">
         <ul>
           <li><button data-route="about" class="linkButton">About</button></li>
           <li><button data-route="careers" class="linkButton">Careers</button></li>

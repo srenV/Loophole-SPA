@@ -22,7 +22,12 @@
   color: gray;
 }
 
-#interactiveImg img {
+#interactiveImg {
+  background-image: url(../images/mobile/image-interactive.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 50vh;
   margin-top: 3rem;
   width: 100%;
 }
@@ -130,24 +135,22 @@
     margin-top: 5rem;
   }
 
-  #interactiveImg img {
-    
-    width: 50%;
+  #interactiveImg{
+    width: 60%;
     position: absolute;
     top: 0;
     left: 10rem;
   }
 
   #textWrapper {
-    position: absolute;
+    position: relative;
     height: auto;
     padding: 3rem;
-    width: 40%;
-    right: 10rem;
-    bottom: 2rem;
+    width: 40rem;
+    right: -55%;
+    bottom: -30%;
     background-color: white;
     text-align: start;
-
   }
 
   #textWrapper h2{

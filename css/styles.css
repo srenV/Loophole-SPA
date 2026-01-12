@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   box-sizing: border-box;
   scrollbar-width: none;
-  font-family: "Alata", sans-serif;
+  font-family:  sans-serif;
 }
 
 body {
